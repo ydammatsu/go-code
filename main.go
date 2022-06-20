@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/jaswdr/faker"
+)
 
 func main() {
-	fmt.Println("Hello World.")
+	faker := faker.New()
+	name := faker.Person().Name()
+	fmt.Println(name)
 }
