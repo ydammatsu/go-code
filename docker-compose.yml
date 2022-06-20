@@ -4,6 +4,8 @@ services:
     build:
       context: .
     command: go run main.go
+    ports:
+      - 8080:8080
     stdin_open: true
     tty: true
     volumes:
